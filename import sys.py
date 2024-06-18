@@ -1,5 +1,5 @@
 import sys
-left = int(input())
+left = int(input('Введите левую границу'))
 right = int(input())
 count = 0
 a = 0
