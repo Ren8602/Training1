@@ -5,13 +5,8 @@ for i in s:
         flag == True
         continue
 
-    elif i == 'i':
+    elif i == 'i' or i == 'e':
         flag = False
         break
-
-    elif i == 'e':
-        flag = False
-        break
-
-
+    
 print(flag)
