@@ -2,14 +2,12 @@ cnt = abs(int(input()))
 data = list()
 while meas := input():
     data.append(meas)
-
-ints = ''
+    
+ints = []
 for i in range(0, cnt, 1):
-    ints = ints + str(max(list(map(int, data[i].split()))))
-    # Эта хрень чтобы не добавлять в конец точку с запятой:
-    if not i == cnt-1:
-        ints += ';'
-print(ints)
+    ints.append(max(list(map(int, data[i].split()))))
+print(';'.join(map(str,sorted(ints, reverse=True))))
+
      
 
 
