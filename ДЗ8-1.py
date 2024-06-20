@@ -1,18 +1,16 @@
 cnt = abs(int(input()))
 data = list()
-while meas := input():
-    data.append(meas)
-    
+try:
+    while meas := input():
+        data.append(meas)
+except:
+    pass
 ints = []
 for i in range(0, cnt, 1):
     ints.append(max(list(map(int, data[i].split()))))
 print(';'.join(map(str,sorted(ints, reverse=True))))
 
      
-
-
-# ТОЖЕ ВЫДАЕТ ОШИБКУ RE. хмм...
-
 
 
 
