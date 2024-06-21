@@ -1,7 +1,7 @@
 k = int(input())
 b =[]
 i=0
-while n <= k:
+while n:= input():
     i+=1
     a = n.split()
     spisok_int = list(map(int, a))
