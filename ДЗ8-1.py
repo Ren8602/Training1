@@ -1,16 +1,29 @@
+# cnt = abs(int(input()))
+# data = list()
+# try:
+#     while meas := input():
+#         data.append(meas)
+# except:
+#     pass
+# ints = []
+# for i in range(0, cnt, 1):
+#     ints.append(max(list(map(int, data[i].split()))))
+# print(';'.join(map(str,sorted(ints, reverse=True))))
+
+
+
+
 cnt = abs(int(input()))
 data = list()
+n = 0
 try:
     while meas := input():
-        data.append(meas)
+        if n < cnt:
+            data.append(max(list(map(int, meas.split()))))
+            n += 1
 except:
     pass
-ints = []
-for i in range(0, cnt, 1):
-    ints.append(max(list(map(int, data[i].split()))))
-print(';'.join(map(str,sorted(ints, reverse=True))))
-
-     
+print(';'.join(map(str,sorted(data, reverse=True))))
 
 
 
