@@ -9,8 +9,9 @@ a = []
 for word in words:
     if words.count(word) > 2 and len(word)>=5 and len(set(word))>=4:
         wcount.add(word)
-
-for w in wcount:
+a = list(wcount)
+a.sort()
+for w in a:
     print (w)
 # for word in wcount:
 #     if len(word)>=5:
