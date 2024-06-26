@@ -1,15 +1,17 @@
-inv = input()
+inv = input().lower()
 for smv in '!,.?;:#$%^&*(),':
     inv = inv.replace(smv, '')
 words = inv.split()
 words.sort()
 filter_words = []
-wcount = []
+wcount = set()
 a = []
 for word in words:
-    if words.count(word) > 2 and len(word)>=5 and len(set(word))==4:
-        wcount.append(word)
-print (wcount)
+    if words.count(word) > 2 and len(word)>=5 and len(set(word))>=4:
+        wcount.add(word)
+
+for w in wcount:
+    print (w)
 # for word in wcount:
 #     if len(word)>=5:
 #         filter_words.append(word)
