@@ -1,6 +1,3 @@
-for i in map(lambda x: x * 2 if x % 2 == 0 else -x , l := list(map(int, input().split()))):
-    print(i)
+l = input().split()
+list(map(lambda x: print(x**2) if x % 2 != 0 else print(-x), [x for x in range(int(l[0]), int(l[1]), int(l[2]))]))
 
-
-# for i in map(lambda x: x * 2 if x % 2 == 0 else -x , list(map(int, input().split()))):
-#     print(i)
