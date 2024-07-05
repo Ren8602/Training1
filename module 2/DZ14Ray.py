@@ -1,0 +1,1 @@
+list(map(lambda x: print(x**2) if x % 2 != 0 else print(-x), range(*(int(x) for x in input().split()))))
