@@ -1,4 +1,3 @@
-x = input()
 lines=[]
 while x:= input():
     if x[0]=='!':
