@@ -8,7 +8,7 @@
 
 
 def cache_deco(func):
-   
+   ...
 
 code = []
 while data := input():
