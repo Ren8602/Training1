@@ -6,7 +6,7 @@ def make_most_common_keys(d: Dict[int, int]) -> List[int]:
     for i in sorted(d.items(), key=lambda item: item[1], reverse=True):
         l.append(i)
     k = [i[0] for i in l]    
-    return l
+    return k
 
       
 code = []
